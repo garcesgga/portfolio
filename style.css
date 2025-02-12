@@ -7,7 +7,7 @@
 
 /*barra navegação*/
 .logo {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 65px; /* Ajuste este valor para aumentar/diminuir o espaço */
     margin-left: 60px;
@@ -116,56 +116,40 @@ nav a:hover::after {
 
 
 /* Projects section*/
-.project-title {
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    position: fixed;
-    left: 50px;
-    font-size: 1rem;
-    font-weight: 400;
-}
-
-.title-line-projects {
-    text-decoration: none;
-    width: 2px;
-    height: 50px;
-    background-color: #000;
-    position: fixed;
-    left: 60px;
-    margin-top: 20px;
-}
-
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    margin-left: 160px;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    gap: 2rem; /* Espaçamento entre os itens */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; /* Limita a largura máxima do grid */
     padding: 2rem;
 }
 
 .project-card {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    align-items: center;
+    background-color: #fff; /* Fundo branco para contraste */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar os cards */
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites do card */
 }
 
 .project-card img {
-    width: 100%;
-    aspect-ratio: 16/9;
-    object-fit: cover;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-    background-color: #f5f5f5;
+    width: 100%; /* Garante que a imagem ocupe toda a largura do card */
+    aspect-ratio: 16/9; /* Mantém a proporção das imagens */
+    object-fit: cover; /* Ajusta o tamanho da imagem para cobrir o espaço disponível */
 }
 
 .project-card h3 {
     font-size: 1rem;
+    text-decoration: none;
     font-weight: 400;
-    text-align: left;
+    text-align: center; /* Centraliza o texto */
     color: #333;
+    padding: 1rem;
 }
-
-
 
 .project-card:hover img {
     transform: translateY(-5px);
