@@ -119,6 +119,19 @@ nav a:hover::after {
 
 
 /* Projects section*/
+.project-title {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    position: fixed;
+    left: 50px;
+    top: 100px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: lowercase;
+    margin: 2rem 0;
+}
+
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Duas colunas */
