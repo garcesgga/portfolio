@@ -341,7 +341,7 @@ nav a:hover::after {
         writing-mode: horizontal-tb;
         transform: none;
         position: static;
-        text-align: center;
+        text-align: top-center;
         margin: 2rem 0;
         font-size: 1.8rem;
     }
@@ -391,7 +391,7 @@ nav a:hover::after {
 }
 
 /* Media Query para Tablets */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .full-screen-section {
     min-height: 100vh;
     padding: 80px 40px;
