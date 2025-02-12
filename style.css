@@ -114,6 +114,8 @@ nav a:hover::after {
     border-bottom: none;
 }
 
+
+/* Projects section*/
 .project-title {
     writing-mode: vertical-lr;
     transform: rotate(180deg);
@@ -162,6 +164,7 @@ nav a:hover::after {
     text-align: left;
     color: #333;
 }
+
 
 
 .project-card:hover img {
@@ -269,7 +272,7 @@ nav a:hover::after {
 
 
 /* Media Query para Dispositivos Móveis */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* Header e Navegação */
   header {
     position: fixed;
