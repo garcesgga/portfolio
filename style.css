@@ -63,7 +63,9 @@ nav {
 
 nav ul {
     list-style: none;
-    height: 100%;
+    position: fixed;
+    width: 70px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
