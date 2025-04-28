@@ -30,6 +30,10 @@ header {
     z-index: 100;
 }
 
+main {
+  margin-top: 100px; /* ajuste para a altura real do seu header */
+}
+
 .home, .projects, .about, .contact {
     position: absolute;
     writing-mode: vertical-lr;
